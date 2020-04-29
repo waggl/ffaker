@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rubygems'
 require 'rake'
 require 'date'
@@ -38,10 +40,6 @@ end
 
 def date
   Date.today.to_s
-end
-
-def rubyforge_project
-  name
 end
 
 def gemspec_file
@@ -119,8 +117,6 @@ task gemspec: :validate do
   replace_header(head, :name)
   replace_header(head, :version)
   replace_header(head, :date)
-  # comment this out if your rubyforge_project has a different name
-  replace_header(head, :rubyforge_project)
 
   # determine file list from git ls-files
   files = `git ls-files`

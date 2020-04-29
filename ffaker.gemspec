@@ -6,7 +6,6 @@ Gem::Specification.new do |s|
   s.name              = 'ffaker'
   s.version           = '2.11.0'
   s.date              = '2018-01-04'
-  s.rubyforge_project = 'ffaker'
   s.required_ruby_version = '>= 2.4'
 
   s.license = 'MIT'
